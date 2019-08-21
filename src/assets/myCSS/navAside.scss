@@ -1,0 +1,55 @@
+@import "element-variables";
+.el-aside{
+  height: 100%;
+  position: fixed;
+  z-index: 2001;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: .3s;
+  background: rgb(48, 65, 86);
+  .scrollbar-wrapper {
+    overflow-x: hidden !important;
+  }
+  .el-scrollbar__bar.is-vertical {
+    right: 0px;
+  }
+  .el-scrollbar {
+    height: 100%;
+    box-sizing: border-box;
+  }
+  .el-scrollbar__bar.is-horizontal{
+    height: 0;
+  }
+}
+.el-menu{
+  height: 100%;
+  width: 100% !important;
+  color: #fff;
+  background-color: rgb(48, 65, 86)!important;
+  border: none!important;
+  .el-menu-item,.el-submenu__title{
+    text-align: left;
+    color: #fff;
+    background:rgb(48, 65, 86);
+
+  }
+  .el-menu-item:hover,.el-submenu__title:hover{
+    //background-color: transparent !important;
+    background-color: #304156;
+  }
+  .el-menu-item.is-active{
+    color: #fff;
+    background-color: $primary;
+
+  }
+
+}
+.el-menu--collapse .el-submenu .el-submenu__title span{
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  visibility: hidden;
+  display: inline-block
+}
